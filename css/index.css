@@ -11,3 +11,199 @@ body {
 .logo > img {
   width: 50px;
 }
+
+header{
+	display: flex;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	background-color: #565656;
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+.hamburger{
+	color: white;
+}
+
+main{
+	display: flex;
+}
+
+.product{
+	border: 1px solid #f2f2f2;
+}
+
+.social{
+	display: flex;
+}
+
+@media (max-width: 599px){
+	header{
+		flex-direction: column;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.hamburger{
+		text-align: right;
+	}
+
+	.header_A{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header_title{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product{
+		width: 80%;
+		margin: 1px 0;
+
+		text-align: center;
+	}
+
+	.social{
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	.social > li{
+		list-style: none;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 990px){
+	header{
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.header_title{
+		width: 60%;
+	}
+
+	.header_A{
+		width: 40%;
+		text-align: center;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.hamburger{
+		text-align: right;
+	}
+
+	main{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product{
+		width: 80%;
+		margin: 1px 0;
+
+		text-align: center;
+	}
+
+	.social{
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		height: 69px;
+		border-top: 1px solid #f2f2f2;
+		margin-top: 5px;
+	}
+
+	.social > li{
+		list-style: none;
+	}
+}
+
+@media (min-width: 991px){
+	header{
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.header_title{
+		width: 60%;
+	}
+
+	.header_A{
+		width: 40%;
+		text-align: center;
+	}
+
+	.menu{
+		color: white;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.menu > li{
+		list-style: none;
+		margin: 0 15px;
+	}
+
+	.hamburger{
+		display: none;
+	}
+
+	main{
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+
+	.product{
+		width: 20%;
+		margin: 1px 15px;
+		flex-grow: 1;
+		align-self: stretch;
+
+		text-align: center;
+	}
+
+	.social{
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		height: 69px;
+		border-top: 1px solid #f2f2f2;
+		margin-top: 5px;
+	}
+
+	.social > li{
+		list-style: none;
+	}
+}
